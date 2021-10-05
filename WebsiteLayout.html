@@ -1,0 +1,83 @@
+<!doctype html>
+<title>Website Layout 2</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1"><strong>Navigation</strong>
+  <p id = "p1">
+      <ul>
+          <li><i>Hello</i></li>
+          <li><i>Welcome all!!</i></li>
+      </ul>
+  </p>
+</nav>
+  <div class="col-2">
+  	<header><strong>Website Layout 2</strong></header>
+    <main class="content">
+    <article>
+        <h3><strong>Article</strong></h3>
+        <p>
+            Leadership refers to the quality of leading people.
+            Probably, it is one of the most important aspects of life.
+            Above all, Leadership has led to the progress of human civilization.
+            Without good Leadership, no organization or group can succeed.
+            Furthermore, not everyone has this quality.
+            This is because effective Leadership requires certain important characteristics.
+        </p>
+    </article>
+    <aside><strong>Qualities of good leader:</strong>
+    <p>
+        <ol>
+            <li>Confidence</li>
+            <li>Good Communication</li>
+            <li>Decision Making</li>
+            <li>Excellent Innovator</li>
+        </ol>
+    </p>
+    </aside>
+    </main>
+  	<footer><strong>Footer</strong>
+      <p>
+          Thank you for seeing this webpage. For more info visit:<a href="https://www.toppr.com/guides/essays/leadership-essay/
+          ">HERE</a> 
+      </p>
+    </footer>
+  </div>
+</body>
